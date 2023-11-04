@@ -1,4 +1,26 @@
 {% include 'base.html' %}
 {% include 'navigation.html' %}
 
-<h1>About Us</h1>
+{% block content %}
+<h1 class="Text ceter" style="margin-top: 50px;">About Us</h1>
+<div class="container" style="margin-top: 100px;">
+    <div class="row">
+        <div class="col-md-6">
+            <h1 class="strong">Who we are<br>what we do</h1>
+            <p class="lead">This is the world's leading portal for <br> easy and quick</p>
+        </div>
+        <div class="col-md-6">
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Vel perferendis accusantium voluptate quam sapiente, eaque, modi fuga error impedit aperiam similique laborum ipsam qui ut itaque sint enim voluptatum! Temporibus!</p>
+            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Assumenda magni architecto eveniet numquam modi dolorem possimus aut, ad nostrum porro asperiores nam sunt doloribus, explicabo corrupti eos unde dolore. Numquam?</p>
+        </div>
+
+        <div class="row">
+            <div class="site-heading text-center">
+                <h3>Our Team</h3>
+                <P>Lorem ipsum dolor sit amet consectetur adipisicing elit. Ab dolor suscipit corporis, quia, asperiores recusandae quos eveniet reprehenderit voluptate veniam ullam dolorem. Quaerat voluptatem facilis totam labore. Voluptates, labore ipsa!</P>
+                <div class="border"></div>
+            </div>
+        </div>
+    </div>
+</div>
+{% endblock content %}

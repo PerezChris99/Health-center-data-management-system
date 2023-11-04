@@ -1,4 +1,35 @@
 {% include 'base.html' %}
 {% include 'navigation.html' %}
+<style>
+    .mydivstyle:hover {
+        box-shadow: 0 0 20px 0 rgba(0, 0, 0, 0.3);
+        transform: translate Y(-20px);
+    }
+</style>
 
-<h1>Contact Us</h1>
+{% block content %}
+
+<div class="container" style="margin-top: 50px;">
+    <h1 class="text-center">Contact Us</h1>
+    <div class="row mt-5 text-center">
+      <div class="col-lg-3 col-sm-6 mydivstyle">
+        <h4><i class="fas fa-phone-square">Contact</i></h1>
+            <p class="text-danger font-weight-bold mt-3"><a href="tel:07736564783">07736564783</a></p>
+      </div>
+      <div class="col-lg-3 col-sm-6 mydivstyle">
+        <h4><i class="fas fa-envelope">Send-Email</i></h4>
+        <p class="font-weight-bold mt-3"><a href="mail to:abc@gmail.com">abc@gmail.com</a></p>
+      </div>
+      <div class="col-lg-3 col-sm-6 mydivstyle">
+        <h4><i class="fas fa-address-card">Office Address</i></h4>
+        <p class="font-weight-bold mt-3"><a href="https://www.maps.google.com/q='kampala">Kampala</a></p>
+      </div>
+      <div class="col-lg-3 col-sm-6 mydivstyle">
+        <h4><i class="fas fa-clock"></i>Office Hours</h4>
+        <p class="font-weight-bold mt-3">9AM TO 5PM</p>
+      </div>
+    </div>
+</div>
+
+
+{% endblock content %}
